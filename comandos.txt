@@ -1,0 +1,183 @@
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint
+$ cd 23-08-2023-KenjiHerrera
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (master)
+$ git config --global init.defaultBranch main
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (master)
+$ git branch main
+fatal: not a valid object name: 'master'
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (master)
+$ git branch -m main
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (main)
+$ git remote add origin https://github.com/Knixonhc/23-08-2023-KenjiHerrera.git
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (main)
+$ touch main.js index.html
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (main)
+$ git commit -m "commit 01 de Kenji Herrera"
+On branch main
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        main.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (main)
+$ git add .
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   main.js
+
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (main)
+$ git log
+fatal: your current branch 'main' does not have any commits yet
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (main)
+$ git commit -m "commit 01 de Kenji Herrera"
+[main (root-commit) 127fde0] commit 01 de Kenji Herrera
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 229 bytes | 229.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Knixonhc/23-08-2023-KenjiHerrera.git
+ * [new branch]      main -> main
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (main)
+$ git branch feature
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (feature)
+$ mkdir Hardware Software SeguridadInformatica
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (feature)
+$ ls
+Hardware/  SeguridadInformatica/  Software/  index.html  main.js
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (feature)
+$ cd Hardware
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera/Hardware (feature)
+$ touch resumen.txt
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera/Hardware (feature)
+$ cd ..
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (feature)
+$ cd Software
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera/Software (feature)
+$ touch resumen.txt
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera/Software (feature)
+$ cd ..
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (feature)
+$ cd SeguirdadInformatica
+bash: cd: SeguirdadInformatica: No such file or directory
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (feature)
+$ cd SeguridadInformatica
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera/SeguridadInformatica (feature)
+$ touch resumen.txt
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera/SeguridadInformatica (feature)
+$ cd ..
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (feature)
+$ git push origin feature
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/Knixonhc/23-08-2023-KenjiHerrera/pull/new/feature
+remote:
+To https://github.com/Knixonhc/23-08-2023-KenjiHerrera.git
+ * [new branch]      feature -> feature
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (feature)
+$ git commit -m "commit 02 de KenjiHerrera"
+On branch feature
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hardware/
+        SeguridadInformatica/
+        Software/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (feature)
+$ git add .
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (feature)
+$ git commit -m "commit 02 de KenjiHerrera"
+[feature f965860] commit 02 de KenjiHerrera
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 SeguridadInformatica/resumen.txt
+ create mode 100644 Software/resumen.txt
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (feature)
+$ git log
+commit f965860ceec1b59f6dbc05e5ed10f97acff0eb4a (HEAD -> feature)
+Author: Knixonhc <knixonhc@gmail.com>
+Date:   Wed Aug 23 21:42:29 2023 -0500
+
+    commit 02 de KenjiHerrera
+
+commit 127fde076cf137d2715678d5e3cf15551bfb2f2b (origin/main, origin/feature, main)
+Author: Knixonhc <knixonhc@gmail.com>
+Date:   Wed Aug 23 21:32:30 2023 -0500
+
+    commit 01 de Kenji Herrera
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (feature)
+$ git push origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 366 bytes | 366.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Knixonhc/23-08-2023-KenjiHerrera.git
+   127fde0..f965860  feature -> feature
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (feature)
+$ git checkout main
+Switched to branch 'main'
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (main)
+$ git mv main.js resumenHardware.txt
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (main)
+$ git mv index.html resumenSoftware.txt
+
+nix14@KNIXON-LAPTOP MINGW64 ~/documents/chekpoint/23-08-2023-KenjiHerrera (main)
+$ touch comandos.txt
